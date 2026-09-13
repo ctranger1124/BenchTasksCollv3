@@ -3,105 +3,106 @@
 ## Overview
 This file contains the status of all new tasks added in each developer's most recent commit across all branches of the `BenchTasksCollv3` repository.
 
-A task is considered `implemented` if it contains all 5 required subdirectories:
-- `docs`
-- `evaluation`
-- `groundtruth_workspace`
-- `initial_workspace`
-- `preprocess`
+A task is considered `implemented` if:
+1. It contains all required subdirectories: `docs`, `evaluation`, `groundtruth_workspace`, `initial_workspace`, `preprocess`
+2. The content requirements are met (per the example in `tasks/examples`):
+   - `docs/task.md` must be non-empty and all English (no Chinese)
+   - `docs/agent_system_prompt.md` must be non-empty and all English (no Chinese)
+   - `docs/user_system_prompt.md` is optional, but if non-empty, must be all English
+   - All other files just need to exist
 
 Otherwise, it is marked as `implementing`.
 
 ## Results by Developer Branch
 
 ### fan-dev
-| Task | Status |
-|------|--------|
-| loyalty-program | implementing |
-| discount-calculator | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| loyalty-program | implementing | Missing initial_workspace, preprocess |
+| discount-calculator | implementing | Missing groundtruth_workspace, initial_workspace |
 
 ### gyy
-| Task | Status |
-|------|--------|
-| tag-manager | implemented |
-| sitemap-generator | implementing |
-| robots-handler | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| tag-manager | implemented | |
+| sitemap-generator | implementing | Missing evaluation |
+| robots-handler | implemented | |
 
 ### haoze
-| Task | Status |
-|------|--------|
-| media-organizer | implemented |
-| streaming-service | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| media-organizer | implemented | |
+| streaming-service | implementing | Missing initial_workspace, preprocess |
 
 ### jl_dev
-| Task | Status |
-|------|--------|
-| customer-feedback-processor | implemented |
-| inventory-management | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| customer-feedback-processor | implemented | |
+| inventory-management | implementing | Missing initial_workspace, preprocess |
 
 ### junteng_dev
-| Task | Status |
-|------|--------|
-| customer-portal | implementing |
-| help-desk | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| customer-portal | implementing | Missing evaluation |
+| help-desk | implemented | |
 
 ### junxian_dev
-| Task | Status |
-|------|--------|
-| currency-converter | implemented |
-| social-connector | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| currency-converter | implementing | docs/task.md contains Chinese content |
+| social-connector | implemented | |
 
 ### lueyang-dev
-| Task | Status |
-|------|--------|
-| territory-manager | implementing |
-| client-portal | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| territory-manager | implementing | Missing multiple directories, preprocess removed |
+| client-portal | implemented | |
 
 ### lv
-| Task | Status |
-|------|--------|
-| survey-builder | implementing |
-| analytics-dashboard | implementing |
-| insights-engine | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| survey-builder | implementing | Missing groundtruth_workspace, preprocess |
+| analytics-dashboard | implementing | Missing groundtruth_workspace, initial_workspace, preprocess |
+| insights-engine | implementing | docs/agent_system_prompt.md contains Chinese content |
 
 ### ruige
-| Task | Status |
-|------|--------|
-| web-crawler | implementing |
-| log-analyzer | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| web-crawler | implementing | Missing groundtruth_workspace, preprocess |
+| log-analyzer | implementing | Missing groundtruth_workspace |
 
 ### wenshuo-dev
-| Task | Status |
-|------|--------|
-| cache-optimizer | implementing |
-| scheduler | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| cache-optimizer | implementing | Missing groundtruth_workspace, initial_workspace |
+| scheduler | implementing | Missing groundtruth_workspace, preprocess |
 
 ### xiaochen_dev
-| Task | Status |
-|------|--------|
-| status-checker | implementing |
-| health-monitor | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| status-checker | implementing | Missing groundtruth_workspace, initial_workspace |
+| health-monitor | implemented | |
 
 ### yuxuan-dev
-| Task | Status |
-|------|--------|
-| sync-service | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| sync-service | implementing | Missing groundtruth_workspace, preprocess |
 
 ### yuzhen-dev
-| Task | Status |
-|------|--------|
-| audit-logger | implemented |
-| resource-monitor | implemented |
+| Task | Status | Notes |
+|------|--------|-------|
+| audit-logger | implementing | docs/agent_system_prompt.md contains Chinese content |
+| resource-monitor | implementing | docs/agent_system_prompt.md contains Chinese content |
 
 ### zhaochen
-| Task | Status |
-|------|--------|
-| certificate-manager | implementing |
-| storage-manager | implementing |
+| Task | Status | Notes |
+|------|--------|-------|
+| certificate-manager | implementing | Missing groundtruth_workspace, initial_workspace, preprocess |
+| storage-manager | implementing | Missing groundtruth_workspace, initial_workspace, preprocess |
 
 ## Summary
 | Status | Count |
 |--------|-------|
-| implemented | 12 |
-| implementing | 17 |
+| implemented | 8 |
+| implementing | 21 |
 | **Total** | **29** |
